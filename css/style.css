@@ -1,0 +1,269 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --text: #222;
+  --muted: #555;
+  --link: #1a5276;
+  --border: #ddd;
+  --bg: #fff;
+  --section-gap: 2.5rem;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+header.profile {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: var(--section-gap);
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.profile-photo {
+  flex-shrink: 0;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+.profile-info h1 {
+  margin: 0 0 0.25rem;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.profile-info .title {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+
+.profile-info .affiliation {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+}
+
+.contact-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1rem;
+  font-size: 0.95rem;
+}
+
+section {
+  margin-bottom: var(--section-gap);
+}
+
+section h2 {
+  margin: 0 0 1rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--border);
+}
+
+section p {
+  margin: 0 0 1rem;
+}
+
+.pub-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pub-item {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.pub-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.pub-thumb-link {
+  flex-shrink: 0;
+  display: block;
+  line-height: 0;
+}
+
+.pub-thumb-link:hover {
+  opacity: 0.88;
+}
+
+.pub-thumb-link:hover .pub-thumb {
+  border-color: var(--link);
+}
+
+.pub-thumb {
+  display: block;
+  width: 140px;
+  height: auto;
+  max-height: 105px;
+  object-fit: contain;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: #fafafa;
+}
+
+.pub-list-first .pub-thumb-link {
+  width: 370px;
+  height: 330px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: #fafafa;
+}
+
+.pub-list-first .pub-thumb-link:hover {
+  border-color: var(--link);
+}
+
+.pub-thumb-large {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  border: none;
+  background: transparent;
+  object-fit: contain;
+}
+
+.pub-list-first {
+  margin-bottom: 2.5rem;
+}
+
+.pub-item-first {
+  flex-direction: row-reverse;
+  margin-bottom: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
+.pub-subsection {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.pub-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.pub-title {
+  font-weight: 600;
+}
+
+.pub-authors {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.pub-venue {
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+.pub-desc {
+  margin: 0.5rem 0 0;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.pub-links {
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.pub-links a + a::before {
+  content: " · ";
+  color: var(--muted);
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  header.profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-links {
+    justify-content: center;
+  }
+
+  .pub-item {
+    flex-direction: column;
+  }
+
+  .pub-item-first {
+    flex-direction: column-reverse;
+  }
+
+  .pub-thumb {
+    width: 100%;
+    max-height: 140px;
+  }
+
+  .pub-list-first .pub-thumb-link {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 37 / 33;
+  }
+
+  .pub-thumb-large {
+    width: 100%;
+    height: 100%;
+  }
+}

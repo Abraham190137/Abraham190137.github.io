@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Abraham George, Research Scientist working on dexterous manipulation for humanoids.">
+  <title>Abraham George</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="profile">
+      <img class="profile-photo" src="assets/profile.jpg" alt="Abraham George">
+      <div class="profile-info">
+        <h1>Abraham George</h1>
+        <p class="title">Research Scientist @ FieldAI</p>
+        <ul class="contact-links">
+          <li><a href="mailto:abraham190137@gmail.com">Email</a></li>
+          <li><a href="https://www.linkedin.com/in/abraham-george-897818184/">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=Bxt7N18AAAAJ&amp;hl=en">Google Scholar</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I am a Research Scientist at FieldAI, where I work on dexterous manipulation for humanoid robots.
+        I received my Ph.D. from Carnegie Mellon University, where I studied data-efficient robot learning for manipulation under
+        <a href="https://www.cs.cmu.edu/~afariman/">Prof. Amir Barati Farimani</a>.
+      </p>
+      <p>
+        My research focuses on machine learning for complex robotic manipulation, with an emphasis on
+        learning efficiently from human demonstrations. I am interested in combining imitation learning,
+        tactile sensing, teleoperation, and foundation models to build robust robotic control systems.
+      </p>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+
+      <ul class="pub-list pub-list-first">
+          <li class="pub-item pub-item-first">
+            <a class="pub-thumb-link" href="https://arxiv.org/abs/2509.20070" target="_blank" rel="noopener noreferrer">
+              <img class="pub-thumb pub-thumb-large" src="assets/papers/llm-trainer.png" alt="LLM Trainer overview figure">
+            </a>
+            <div class="pub-body">
+              <div class="pub-title">LLM Trainer: Automated Robotic Data Generating via Demonstration Augmentation using LLMs</div>
+              <div class="pub-authors">Abraham George, Amir Barati Farimani</div>
+              <div class="pub-venue">IEEE International Conference on Robotics and Automation (ICRA), 2026</div>
+              <p class="pub-desc">Uses large language models to turn as few as one human demonstration into a large imitation learning dataset. The pipeline annotates keyframes, salient objects, and pose-object relations offline, retargets them to new scenes online, and warps the original demo into trajectories that are executed and saved when successful. Thompson sampling optimizes the reusable annotations to improve generation success, and we validate the approach on simulated tasks and a Franka Emika Panda.</p>
+              <div class="pub-links"><a href="https://arxiv.org/abs/2509.20070">Paper</a></div>
+            </div>
+          </li>
+          <li class="pub-item pub-item-first">
+            <a class="pub-thumb-link" href="https://arxiv.org/abs/2403.11898" target="_blank" rel="noopener noreferrer">
+              <img class="pub-thumb pub-thumb-large" src="assets/papers/vital.jpg" alt="ViTaL pretraining figure">
+            </a>
+            <div class="pub-body">
+              <div class="pub-title">ViTaL Pretraining: Visuo-Tactile Pretraining for Tactile and Non-Tactile Manipulation Policies</div>
+              <div class="pub-authors">Abraham George, Selam Gano, Pranav Katragadda, Amir Barati Farimani</div>
+              <div class="pub-venue">IEEE International Conference on Robotics and Automation (ICRA), 2025</div>
+              <p class="pub-desc">Incorporates tactile sensing into imitation learning for USB cable plugging, a dexterous task that depends on fine-grained visuo-tactile servoing. We pretrain visual and tactile encoders with a contrastive loss so that a vision-only policy at deployment can reach performance on par with a visuo-tactile agent without using tactile sensors at inference.</p>
+              <div class="pub-links"><a href="https://arxiv.org/abs/2403.11898">Paper</a></div>
+            </div>
+          </li>
+          <li class="pub-item pub-item-first">
+            <a class="pub-thumb-link" href="https://arxiv.org/abs/2309.10175" target="_blank" rel="noopener noreferrer">
+              <img class="pub-thumb pub-thumb-large" src="assets/papers/one-act-play.png" alt="One ACT Play figure">
+            </a>
+            <div class="pub-body">
+              <div class="pub-title">One ACT Play: Single Demonstration Behavior Cloning with Action Chunking Transformers</div>
+              <div class="pub-authors">Abraham George, Amir Barati Farimani</div>
+              <div class="pub-venue">arXiv preprint, 2023</div>
+              <p class="pub-desc">Trains a behavior cloning agent from a single human demonstration by augmenting the trajectory with linear transforms to cover varied initial conditions. Built on Action Chunking Transformers, the method also adds temporal ensembling that uses the standard deviation of predicted actions to stay robust when the environment deviates from what the policy expects.</p>
+              <div class="pub-links"><a href="https://arxiv.org/abs/2309.10175">Paper</a></div>
+            </div>
+          </li>
+          <li class="pub-item pub-item-first">
+            <a class="pub-thumb-link" href="https://arxiv.org/abs/2209.11275" target="_blank" rel="noopener noreferrer">
+              <img class="pub-thumb pub-thumb-large" src="assets/papers/minimizing-assistance.png" alt="Minimizing Human Assistance figure">
+            </a>
+            <div class="pub-body">
+              <div class="pub-title">Minimizing Human Assistance: Augmenting a Single Demonstration for Deep Reinforcement Learning</div>
+              <div class="pub-authors">Abraham George, Alison Bartsch, Amir Barati Farimani</div>
+              <div class="pub-venue">IEEE International Conference on Robotics and Automation (ICRA), 2023</div>
+              <p class="pub-desc">Minimizes human teaching during reinforcement learning by augmenting a single VR demonstration into many human-like trajectories for DDPG with Hindsight Experience Replay. The approach speeds training on simple manipulation tasks, enables block stacking that baseline DDPG+HER cannot solve, and requires less than a minute of human input while still allowing policies that differ from the original demo.</p>
+              <div class="pub-links"><a href="https://arxiv.org/abs/2209.11275">Paper</a></div>
+            </div>
+          </li>
+          <li class="pub-item pub-item-first">
+            <a class="pub-thumb-link" href="https://doi.org/10.1109/JSEN.2024.3471175" target="_blank" rel="noopener noreferrer">
+              <img class="pub-thumb pub-thumb-large" src="assets/papers/beadsight.png" alt="BeadSight sensor figure">
+            </a>
+            <div class="pub-body">
+              <div class="pub-title">BeadSight: An Inexpensive Tactile Sensor Using Hydro-Gel Beads</div>
+              <div class="pub-authors">Abraham George, Yibo Chen, Atharva Dikshit, Selam Gano, Peter Pak, Amir Barati Farimani</div>
+              <div class="pub-venue">IEEE Sensors Journal, 2024</div>
+              <p class="pub-desc">Introduces an inexpensive, easily replaceable visuo-tactile sensor that encases hydro-gel beads in a vinyl bag. A rear camera observes bead deformation during contact, and a U-Net predicts the applied forces as a pressure map, offering a practical tactile option when cost and durability limit conventional sensors.</p>
+              <div class="pub-links">
+                <a href="https://doi.org/10.1109/JSEN.2024.3471175">Paper</a>
+                <a href="https://arxiv.org/abs/2405.13204">arXiv</a>
+              </div>
+            </div>
+          </li>
+          <li class="pub-item pub-item-first">
+            <a class="pub-thumb-link" href="https://doi.org/10.1016/j.softx.2025.102054" target="_blank" rel="noopener noreferrer">
+              <img class="pub-thumb pub-thumb-large" src="assets/papers/openvr.png" alt="OpenVR teleoperation figure">
+            </a>
+            <div class="pub-body">
+              <div class="pub-title">OpenVR: Teleoperation for Manipulation</div>
+              <div class="pub-authors">Abraham George, Alison Bartsch, Amir Barati Farimani</div>
+              <div class="pub-venue">SoftwareX, 2025</div>
+              <p class="pub-desc">Presents open-source VR teleoperation for a Franka Emika Panda using an Oculus headset and consumer hardware. The system is designed to be easy to use, easy to modify, and agnostic to experimental setup so researchers can collect demonstration trajectories more efficiently for imitation or reinforcement learning pipelines.</p>
+              <div class="pub-links"><a href="https://doi.org/10.1016/j.softx.2025.102054">Paper</a></div>
+            </div>
+          </li>
+      </ul>
+
+      <h3 class="pub-subsection">Collaborative</h3>
+      <ul class="pub-list">
+          <li class="pub-item">
+            <a class="pub-thumb-link" href="https://arxiv.org/abs/2505.01931" target="_blank" rel="noopener noreferrer">
+              <img class="pub-thumb" src="assets/papers/semantic-intelligence.png" alt="Semantic Intelligence figure">
+            </a>
+            <div class="pub-body">
+              <div class="pub-title">Semantic Intelligence: Integrating GPT-4 with A* Planning in Low-Cost Robotics</div>
+              <div class="pub-authors">Jacob Barkley, Abraham George, Amir Barati Farimani</div>
+              <div class="pub-venue">arXiv preprint, 2025</div>
+              <div class="pub-links"><a href="https://arxiv.org/abs/2505.01931">Paper</a></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <a class="pub-thumb-link" href="https://arxiv.org/abs/2505.09040" target="_blank" rel="noopener noreferrer">
+              <img class="pub-thumb" src="assets/papers/rt-cache.png" alt="RT-Cache figure">
+            </a>
+            <div class="pub-body">
+              <div class="pub-title">RT-Cache: Training-Free Retrieval for Real-Time Manipulation</div>
+              <div class="pub-authors">Ohyeong Kwon, Abraham George, Alison Bartsch, Amir Barati Farimani</div>
+              <div class="pub-venue">IEEE-RAS International Conference on Humanoid Robots (Humanoids), 2025</div>
+              <div class="pub-links"><a href="https://arxiv.org/abs/2505.09040">Paper</a></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <a class="pub-thumb-link" href="https://arxiv.org/abs/2406.15639" target="_blank" rel="noopener noreferrer">
+              <img class="pub-thumb" src="assets/papers/low-fidelity-vt.jpg" alt="Low-fidelity visuo-tactile pretraining figure">
+            </a>
+            <div class="pub-body">
+              <div class="pub-title">Low-Fidelity Visuo-Tactile Pre-Training Improves Vision-Only Manipulation Performance</div>
+              <div class="pub-authors">Selam Gano, Abraham George, Amir Barati Farimani</div>
+              <div class="pub-venue">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2025</div>
+              <div class="pub-links"><a href="https://arxiv.org/abs/2406.15639">Paper</a></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <a class="pub-thumb-link" href="https://arxiv.org/abs/2503.17566" target="_blank" rel="noopener noreferrer">
+              <img class="pub-thumb" src="assets/papers/llm-drone.png" alt="LLM-Drone figure">
+            </a>
+            <div class="pub-body">
+              <div class="pub-title">LLM-Drone: Aerial Additive Manufacturing with Drones Planned Using Large Language Models</div>
+              <div class="pub-authors">Chase Merrill, Akash Raman, Abraham George, Amir Barati Farimani</div>
+              <div class="pub-venue">Construction Robotics, 2025</div>
+              <div class="pub-links"><a href="https://arxiv.org/abs/2503.17566">Paper</a></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <a class="pub-thumb-link" href="https://arxiv.org/abs/2409.11580" target="_blank" rel="noopener noreferrer">
+              <img class="pub-thumb" src="assets/papers/plato.png" alt="PLATO figure">
+            </a>
+            <div class="pub-body">
+              <div class="pub-title">PLATO: Planning with LLMs and Affordances for Tool Manipulation</div>
+              <div class="pub-authors">Alex Car, Sai Surya Yarlagadda, Alison Bartsch, Abraham George, Amir Barati Farimani</div>
+              <div class="pub-venue">arXiv preprint, 2024</div>
+              <div class="pub-links"><a href="https://arxiv.org/abs/2409.11580">Paper</a></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <a class="pub-thumb-link" href="https://doi.org/10.1016/j.engappai.2024.108603" target="_blank" rel="noopener noreferrer">
+              <img class="pub-thumb" src="assets/papers/fluid-viscosity.jpg" alt="Fluid viscosity prediction figure">
+            </a>
+            <div class="pub-body">
+              <div class="pub-title">Fluid Viscosity Prediction Leveraging Computer Vision and Robot Interaction</div>
+              <div class="pub-authors">Jaehyun Park, Gaurav Prakash Dalwankar, Alison Bartsch, Abraham George, Amir Barati Farimani</div>
+              <div class="pub-venue">Engineering Applications of Artificial Intelligence, 2024</div>
+              <div class="pub-links">
+                <a href="https://doi.org/10.1016/j.engappai.2024.108603">Paper</a>
+                <a href="https://arxiv.org/abs/2308.02715">arXiv</a>
+              </div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <a class="pub-thumb-link" href="https://arxiv.org/abs/2307.13159" target="_blank" rel="noopener noreferrer">
+              <img class="pub-thumb" src="assets/papers/robochop.png" alt="RoboChop figure">
+            </a>
+            <div class="pub-body">
+              <div class="pub-title">RoboChop: Autonomous Framework for Fruit and Vegetable Chopping Leveraging Foundational Models</div>
+              <div class="pub-authors">Atharva Dikshit, Alison Bartsch, Abraham George, Amir Barati Farimani</div>
+              <div class="pub-venue">arXiv preprint, 2023</div>
+              <div class="pub-links"><a href="https://arxiv.org/abs/2307.13159">Paper</a></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <a class="pub-thumb-link" href="https://arxiv.org/abs/2309.08892" target="_blank" rel="noopener noreferrer">
+              <img class="pub-thumb" src="assets/papers/pour-drink.png" alt="Pour me a drink figure">
+            </a>
+            <div class="pub-body">
+              <div class="pub-title">Pour Me a Drink: Robotic Precision Pouring Carbonated Beverages into Transparent Containers</div>
+              <div class="pub-authors">Feng Zhu, Shuo Hu, Li Leng, Alison Bartsch, Abraham George, Amir Barati Farimani</div>
+              <div class="pub-venue">arXiv preprint, 2023</div>
+              <div class="pub-links"><a href="https://arxiv.org/abs/2309.08892">Paper</a></div>
+            </div>
+          </li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Last updated June 2025.</p>
+    </footer>
+  </div>
+</body>
+</html>
