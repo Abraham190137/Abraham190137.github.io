@@ -40,4 +40,5 @@ If you prefer a repository named something else (e.g. `website`), push to that r
 - **Bio / affiliation**: edit the About section in `index.html`.
 - **Publications**: add entries under the appropriate year in `index.html`.
 - **CV**: replace `assets/resume.pdf` with an updated PDF.
-- **Photo**: replace `assets/profile.jpg`.
+- **Photo**: keep the full-resolution original in `assets/originals/profile/` (or `References/`). Create a resized copy for the site at `assets/profile.jpg`; do not overwrite the original.
+- **Publication figures**: keep full-resolution originals in `assets/originals/papers/`. The files in `assets/papers/` are what the site serves; when optimizing for web, write a new file instead of replacing the original.
